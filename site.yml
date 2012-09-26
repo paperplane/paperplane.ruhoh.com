@@ -1,11 +1,10 @@
-title : Blog Title
+title : 紙飛機
 tagline: Blog Tagline
 author :
-  name : Firstname Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : JunQi Lee
+  email : jql.buaa@gmail.com
+  github : paperplane
+  twitter : ipaperplane
 
 navigation :
   - archive.html
