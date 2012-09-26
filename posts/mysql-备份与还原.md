@@ -16,14 +16,20 @@ tags: ['MySQL']
 + 粗暴式方法：
 
     1.停止正在进行的数据库实例
+
     2.锁住所有的写操作
+
     3.flush tables with read lock
 + 较好点的：
 
     1.如果支持事务的存储引擎，利用事务取得一致性
+
     2.repeatable read 
+
     3.mvcc
+
     4.快照（需要操作系统或第三方支持）
+
     5.mysqldump 只备份结构而不备份数据
 
 3 备份原因
