@@ -1,5 +1,5 @@
 ---
-title: Fabric Documentation
+title: Fabric 
 description:
 date: '2012-09-27'
 
