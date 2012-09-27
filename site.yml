@@ -8,9 +8,8 @@ author :
 
 navigation :
   - archive.html
-  - tags.html
   - categories.html
-  - pages.html
   - documentation/fabric/index.md
   - documentation/mcollective/index.md  
+  - tags.html
   - about.md
