@@ -11,6 +11,9 @@ navigation :
   - tags.html
   - categories.html
   - pages.html
-  - about.md
   - documentation/fabric/index.md
   - documentation/mcollective/index.md  
+  -
+  -
+  -
+  - about.md
