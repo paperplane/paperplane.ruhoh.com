@@ -34,6 +34,14 @@
           <ul class="nav">
             {{# site.navigation?to_pages }}
               {{> pages_list }}
+	      <li><ul class="dropdown">
+		<a herf="/documentation" class="dropdown-toggle" data-toggle="dropdown"> "documentation" <b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li><a herf="documentation/fabric">Fabric</a></li>
+			<li class="divider"></li>
+			<li><a herf="documentation/mcollective">Mcollective</a></li>
+		</ul>
+	       </ul></li>
             {{/ site.navigation?to_pages }}
           </ul>
         </div>

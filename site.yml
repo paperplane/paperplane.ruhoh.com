@@ -13,7 +13,4 @@ navigation :
   - pages.html
   - documentation/fabric/index.md
   - documentation/mcollective/index.md  
-  -
-  -
-  -
   - about.md
