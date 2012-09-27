@@ -1,6 +1,10 @@
 ---
 title: Fabric Documentation
 description:
+date: '2012-09-27'
+
+categories: documentation
+tags: ['Fabric','OPS']
 ---
 
 ##目录##
