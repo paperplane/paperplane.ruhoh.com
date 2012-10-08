@@ -9,4 +9,10 @@ description:
 
 在神奇的学院学着神奇的专业
 
-正朝着职业IT人士不断前进......
+朝着职业IT人士道路不断前进
+
+---
+
++ 我的Weibo: [@JunQi在奋斗](http://weibo.com/ipaperplane)
++ 我的Twitter: @ipaperplane
++ 我的Gtalk: jql.buaa@gmail.com
