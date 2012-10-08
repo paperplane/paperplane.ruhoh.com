@@ -21,10 +21,8 @@ Fabric 既是一个 python(2.5+)类库也是一个基于 SSH 的应用程序部�
 
 一个简单但完整的fabric例子是这样的：首先定义python模块fabfile/fabfile.py：
 
-    from fabric.api import run
-    
+    from fabric.api import run    
     def host_type():    
-            
             run('uname -s')
 
 然后命令行执行 fab 以及结果：
