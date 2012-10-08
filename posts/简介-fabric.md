@@ -3,6 +3,7 @@ title: 'Fabric系列之简介'
 date: '2012-10-08'
 description:
 categories: ['Fabric','OPS']
+tags: ['Fabric']
 ---
 
 ##简介##
