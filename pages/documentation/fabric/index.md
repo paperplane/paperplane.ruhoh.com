@@ -14,8 +14,8 @@ Fabric 既是一个 python(2.5+)类库也是一个基于 SSH 的应用程序部�
 
 * * *
 
-+ 简介
-+ 环境字典
++ [简介](http://paperplane.ruhoh.com/fabric/fabric%E7%B3%BB%E5%88%97%E4%B9%8B%E7%AE%80%E4%BB%8B/)
++ [环境字典](http://paperplane.ruhoh.com/fabric/fabric%E7%B3%BB%E5%88%97%E4%B9%8B%E7%AE%80%E4%BB%8B/)
 + 主机列表
 + 任务列表
 + 执行模式
