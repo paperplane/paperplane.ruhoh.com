@@ -14,5 +14,6 @@ description:
 ---
 
 + 我的Weibo: [@JunQi在奋斗](http://weibo.com/ipaperplane)
-+ 我的Twitter: @ipaperplane
++ 我的Twitter: [@ipaperplane](https://twitter.com/#!/ipaperplane)
 + 我的Gtalk: jql.buaa@gmail.com
++ 我的GitHub: [@paperplane](https://github.com/paperplane)
