@@ -11,7 +11,7 @@ tags: ['Mcollective','OPS']
 
 + 概述篇
 
-    * MCollective 简介
+    * [MCollective 简介](http://paperplane.ruhoh.com/mcollective/mcollective%E7%B3%BB%E5%88%97%E4%B9%8B%E7%AE%80%E4%BB%8B/)
     * 解决问题及使用原因(What && why)
     * 常用术语
     * 文档综述
