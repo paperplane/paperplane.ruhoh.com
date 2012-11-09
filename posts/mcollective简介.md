@@ -6,7 +6,7 @@ categories: ['Mcollective','OPS']
 tags: 'Mcollective'
 ---
 
-## MCollective简介 ## 
+MCollective简介 
 
 MCollective 是一个构建服务器编排(Server Orchestration)和并行工作执行系统的框架。
 
