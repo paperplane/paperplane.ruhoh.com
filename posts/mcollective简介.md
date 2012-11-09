@@ -6,7 +6,7 @@ categories: ['Mcollective','OPS']
 tags: 'Mcollective'
 ---
 
-##MCollective简介## 
+## MCollective简介 ## 
 
 MCollective 是一个构建服务器编排(Server Orchestration)和并行工作执行系统的框架。
 
@@ -16,6 +16,8 @@ MCollective 是一个构建服务器编排(Server Orchestration)和并行工作�
 工具和通过目标数据(meta data)而不是主机名(hostnames)来实时发现网络资源这样的现代化理念。提供了一个可扩展的而且迅速的并行执行环境。
 
 有文档指出： MCollective 工具为命令行界面，但它可与数千个应用实例进行通信，而且传输速度惊人。无论部署的实例位于什么位置，通信都能以线速进行传输，使用的是一个类似多路传送的推送信息系统。MCollective 工具没有可视化用户界面，用户只能通过检索来获取需要应用的实例。Puppet Dashboard 提供有这部分功能。
+
+***
 
 * MCollective特点
 
@@ -38,6 +40,8 @@ MCollective 是一个构建服务器编排(Server Orchestration)和并行工作�
 9 中间件系统已有丰富的身份验证和授权模型，利用这些作为控制的第一道防线。
 
 10 重用中间件来做集群、路由和网络隔离以实现安全和可扩展安装。
+
+***
 
 * 插件化内核 
 
