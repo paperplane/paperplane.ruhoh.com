@@ -15,15 +15,15 @@ tags: ['Mcollective','OPS']
     * 解决问题及使用原因(What && why)
     * 常用术语
     * 文档综述
-<br/>
 
+    
 + 原理篇
 
     * 发布订阅中间件
     * 消息流和消息格式
     * 使用SubCollectives进行网络分区
     * 安全概述
-<br/>
+
 
 + 使用篇
 
@@ -31,7 +31,7 @@ tags: ['Mcollective','OPS']
     * 自定义报告
     * 控制守护进程
     * 使用过滤器
-<br/>
+
 
 + 编程篇
 
@@ -43,10 +43,12 @@ tags: ['Mcollective','OPS']
     * DDL数据定义语言
     * MCollective/Fabric执行任务比较
 
+
 + 集成篇
 
     * MCollective结合Puppet
     * ActiveMQ中间件
+
 
 + 插件篇
 
