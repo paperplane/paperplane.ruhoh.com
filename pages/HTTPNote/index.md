@@ -11,7 +11,6 @@ tags: ['HTTP','Note']
 
     Note-1 HTTP基础知识汇总
 
-感谢[赵老师](http://weibo.com/jeffz)的[学生资助计划](https://github.com/JeffreyZhao/ssp)。不仅为我们提供了阅读材料--[《HTTP权威指南》](http://book.douban.com/subject/10746113/)，还提供了这样一个读书交流平台。当然也希望更多的同学和相关人士加入进来。
-
+感谢[赵老师](http://weibo.com/jeffz)的[学生资助计划](https://github.com/JeffreyZhao/ssp)。不仅为我们提供了阅读材料--[《HTTP权威指南》](http://book.douban.com/subject/10746113/)，也提供了这样一个读书交流平台。当然同时希望更多的同学和相关人士加入进来。
 
 最后，欢迎大家多多交流沟通，不好的错误的欢迎批评指正。
