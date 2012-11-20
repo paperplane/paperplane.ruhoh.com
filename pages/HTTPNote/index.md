@@ -1,11 +1,11 @@
 ---
-title: Notes For HTTP-Learning
+title: HTTPNote
 description:
 
 categories: Notes
 tags: ['HTTP','Note']
 ---
-###说明###
+###Notes For HTTP-Learning###
 
 这是阅读《HTTP权威指南》的系列读书笔记列表。我会随着阅读的进度随时更新该列表。
 
