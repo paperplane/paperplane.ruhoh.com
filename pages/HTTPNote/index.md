@@ -1,27 +1,17 @@
 ---
-title: HTTPNote
+title: Notes For HTTP-Learning
 description:
 
 categories: Notes
 tags: ['HTTP','Note']
 ---
+###说明###
 
-##说明##
-Fabric 既是一个 python(2.5+)类库也是一个基于 SSH 的应用程序部署和系统管理任务的命令行工具。
+这是阅读《HTTP权威指南》的系列读书笔记列表。我会随着阅读的进度随时更新该列表。
 
-它提供整套本地和远程执行 shell 命令、上传下载文件操作，以及一些辅助功能比如提示和执行用户输入，放弃执行之类。
+    Note-1 HTTP基础知识汇总
 
-* * * 
+感谢[赵老师](http://weibo.com/jeffz)的[学生资助计划](https://github.com/JeffreyZhao/ssp)。不仅为我们提供了阅读材料--[《HTTP权威指南》](http://book.douban.com/subject/10746113/)，还提供了这样一个读书交流平台。当然也希望更多的同学和相关人士加入进来。
 
-+ [简介](http://paperplane.ruhoh.com/fabric/fabric%E7%B3%BB%E5%88%97%E4%B9%8B%E7%AE%80%E4%BB%8B/)
-+ [环境字典](http://paperplane.ruhoh.com/fabric/fabric%E7%B3%BB%E5%88%97%E4%B9%8B%E7%8E%AF%E5%A2%83%E5%AD%97%E5%85%B8/)
-+ [主机列表](http://paperplane.ruhoh.com/fabric/fabric%E7%B3%BB%E5%88%97%E4%B9%8B%E4%B8%BB%E6%9C%BA%E5%88%97%E8%A1%A8/)                                                
-+ 任务列表
-+ 执行模式
-+ 工具命令
-+ 两个文件
-+ 远程交互
-+ 使用类库
-+ SSH行为
-+ 管理输出
-+ 附录
+
+最后，欢迎大家多多交流沟通，不好的错误的欢迎批评指正。
