@@ -2,11 +2,11 @@
 title: HTTPNote
 description:
 
-categories: Note
+categories: Notes
 tags: ['HTTP','Note']
 ---
 
-##目录##
+##说明##
 Fabric 既是一个 python(2.5+)类库也是一个基于 SSH 的应用程序部署和系统管理任务的命令行工具。
 
 它提供整套本地和远程执行 shell 命令、上传下载文件操作，以及一些辅助功能比如提示和执行用户输入，放弃执行之类。
