@@ -1,5 +1,5 @@
 ---
-title: HTTP基础
+title: HTTP基础知识汇总
 date: '2012-11-23'
 description:
 categories: Notes
