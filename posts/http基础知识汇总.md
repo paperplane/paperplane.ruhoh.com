@@ -82,7 +82,9 @@ telnet/tcpdump查看报文内容
 </table>
 
 + WEB资源
+    
     1 资源概述：所有能够提供WEB内容的东西都是WEB资源
+    
         WEB服务器是WEB资源的宿主,而WEB资源是WEB内容的源头
         
         静态资源：静态文件等,动态资源：根据需要生成的软件程序
@@ -91,11 +93,11 @@ telnet/tcpdump查看报文内容
     
     1.名称含义
     
-    URI 统一资源表示符 Uniform Resource Identifier
+        URI 统一资源表示符 Uniform Resource Identifier
     
-    URL 统一资源定位符 Uniform Resource Location
+        URL 统一资源定位符 Uniform Resource Location
     
-    URN 统一资源名       Uniform Resource Name
+        URN 统一资源名       Uniform Resource Name
     
     2.关系：服务器资源名称称为URI，URI的两种实现形式，分别是URL(最常见)和URN（实验阶段）
     
