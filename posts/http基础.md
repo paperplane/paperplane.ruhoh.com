@@ -1,6 +1,6 @@
 ---
-title: HTTP基础知识汇总
-date: '2012-11-24'
+title: HTTP基础
+date: '2012-11-23'
 description:
 categories: Notes
 tags: ['HTTP','Note']
