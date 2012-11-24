@@ -85,9 +85,9 @@ telnet/tcpdump查看报文内容
     
     1 资源概述：所有能够提供WEB内容的东西都是WEB资源
     
-        WEB服务器是WEB资源的宿主,而WEB资源是WEB内容的源头
+    WEB服务器是WEB资源的宿主,而WEB资源是WEB内容的源头
         
-        静态资源：静态文件等,动态资源：根据需要生成的软件程序
+    静态资源：静态文件等,动态资源：根据需要生成的软件程序
 
     2 资源名称：URI与URL/URN
     
@@ -109,9 +109,9 @@ telnet/tcpdump查看报文内容
     
     方案：指明访问资源所使用的协议类型 HTTP://等
 
-    服务器的因特网地址 www.baidu.com、 192.168.0.1等
+    服务器的因特网地址: www.baidu.com、 192.168.0.1等
 
-    其余指定WEB服务器上的某个资源 /、/z/shibada/zhuanti.html等
+    其余指定WEB服务器上的某个资源: /、/z/shibada/zhuanti.html等
 
     3 资源类型：WEB传输对象的MIME类型
     
@@ -122,12 +122,18 @@ telnet/tcpdump查看报文内容
     MIME类型是一种文本标记，表示一种主要的对象类型和一个特定的子类型，中间由一条斜杠来分隔
     
     常见类型
-    HTML格式文本文件  text/html
-    普通ASCII文本文件  text/plain
-    JPEG版本图片文件   image/jpeg
-    GIF格式的图片文件  image/gif
-    APPLE的Quicktime电影 video/quicktime
-    微软PPT演示文件     application/vnd.ms-powerpoint
+        
+        HTML格式文本文件  text/html
+    
+        普通ASCII文本文件  text/plain
+    
+        JPEG版本图片文件   image/jpeg
+    
+        GIF格式的图片文件  image/gif
+    
+        APPLE的Quicktime电影 video/quicktime
+    
+        微软PPT演示文件     application/vnd.ms-powerpoint
 + HTTP事务
     
     1 HTTP事务 一个HTTP事务是由一条请求命令（从客户端发往服务器端）和一个响应结果（从服务器端发往客户端）组成的
@@ -137,25 +143,42 @@ telnet/tcpdump查看报文内容
     3 状态码：HTTP报文返回携带一个状态码，告知客户端执行结果
 
     4 常见方法： 
-    GET 请求服务器发送某个资源
-    PUT 
-    POST
-    HEAD
-    TRACE
-    DELETE
-    OPTIONS
+        
+        GET 请求服务器发送某个资源
+    
+        PUT 
+    
+        POST
+    
+        HEAD
+    
+        TRACE
+    
+        DELETE
+    
+        OPTIONS
 
     5 常见状态码（状态码 原因短语 含义）
-    1XX 信息性状态码
-    2XX 成功状态码
-    200
-    3XX 重定向状态码
-    302
-    4XX 客户端错误状态码
-    404
-    5XX 服务器错误状态码
-    500 内部服务器错误
-    503 服务不可用
+    
+        1XX 信息性状态码
+    
+        2XX 成功状态码
+    
+        200
+    
+        3XX 重定向状态码
+    
+        302
+    
+        4XX 客户端错误状态码
+    
+        404
+    
+        5XX 服务器错误状态码
+    
+        500 内部服务器错误
+    
+        503 服务不可用
 
     6 WEB页面可以包含多个对象，一个页面通常不是单个资源，而是一组资源的集合。复合WEB页面要为每个嵌入式资源使用以一个单独的HTTP事务
 + HTTP报文
@@ -163,7 +186,9 @@ telnet/tcpdump查看报文内容
     1 通用报文格式：请求报文和响应报文
     
     起始行：报文的第一行就是起始行，请求报文中说明要做什么，响应报文中说明出现了什么情况
+    
     请求报文起始行
+    
     响应报文起始行
     
     首部字段：起始行后面有零个或多个首部字段。每个首部字段都包含一个名字一个值（Key-Value形式），以冒号隔开。首部以空行结束，添加一个首部字段和添加新行一样简单。
