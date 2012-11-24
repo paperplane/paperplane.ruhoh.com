@@ -25,7 +25,7 @@ tags: ['HTTP','Note']
 * * *
 
 ###HTTP举例###
-![HTTP事务图](/root/paperplane.ruhoh.com/posts/HTTP.png)
+<img src="{{urls.media}}/HTTP.png">
 
 上述过程简单理解为一个人给另一个人打电话询问某个信息
 
