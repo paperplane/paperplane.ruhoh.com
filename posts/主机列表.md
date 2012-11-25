@@ -1,0 +1,127 @@
+---
+title: 'Fabric系列之主机列表'
+date: '2012-11-08'
+description:
+categories: ['Fabric','OPS']
+tags: ['Fabric']
+---
+
+##主机列表--Host List##
+
+Fabric 最重要的功能就是在一个/多个主机上执行一个/多个任务，那么如何指定多个主机就显得基础和关键，前面的 ENV 变量中也多次提到 host/host,role/roles, user/host/port 等概念，这些就是在指定主机时需要的信息。在下一部分介绍如何定义 fabric 中另一重要部分--任务(task).
+    
+Fabric 指定主机的方式有很多，随着作用域由全局到具体任务也不尽相同，这些方式在必要的时候也可以结合使用。在此之前需要先了解两个概念：Hosts：这里指的是 env.host_string，它的一般形式：username@hostname:port，分别是 env.user,    env.host,    env.port，执行任务时，fabric 分别相应部分并存入相应 ENV 变量。这里 user 和 port 一般使用默认值。Roles：即分组的 hosts。字典类型，key 为分组名，value 为分组主机列表。一般在有需要分组的情况下才会使用。如果需要制定一系列主机而又不分组可直接使用 env.hosts。
+    
+    from fabric.api import env
+    
+    env.roledefs = {    
+        'web': ['www.buaa.edu.cn'],    
+
+        'dns': ['ns1.buaa.edu.cn', 'ns2.buaa.edu.cn']
+    }
+
+还可以是这样：
+    
+    env.roledefs = ['ns1.buaa.edu.cn','ns2.buaa.edu.cn']
+
+这类似: 
+
+    env.hosts = ['ns1.buaa.deu.cn','ns2.buaa.edu.cn']
+
+下面是 fabric 中指定主机列表方式：
+
+* 指定主机
+
+1.全局 host 通过 env 环境变量
+
+    from fabric.api import env, run 
+    
+    env.hosts = ['host1', 'host2']
+    
+    def mytask():    
+        run('ls /var/www')
+
+这时
+
+    $fab mytask
+
+或者定义函数设定主机
+
+    from fabric.api import env, run
+
+    def mytask():
+        run('ls /var/www')
+    
+    def set_hosts():    
+        env.hosts = ['host1', 'host2']
+    
+只需
+
+    $fab set_hosts mytask
+
+
+2.全局 host  通过 fab 命令行工具
+    
+    $fab -H host1,host2 mytask
+
+
+3.单个任务 通过 fab 命令行工具
+
+    $fab mytask:hosts="host1;host2"
+                                   
+    
+4.单个任务 听过装饰器 decorators
+
+    from fabric.api import hosts, run
+    
+    @hosts('host1', 'host2')
+    def mytask():    
+        run('ls /var/www')
+    
+需要注意的是它们之间的优先级、执行顺序很重要，很可能会一个设置覆盖另一个设置。需要注意就是：
+
+    A.命令行切换会在 fabfile 加载之前解释，单个任务命令行参数覆盖 fabfile 设置，在 fabfile 中赋值的 env.hosts 和 env.roles 会覆盖命令行全局参数；
+
+    B.单个任务参数会覆盖全局设置，而单个任务装饰器并不覆盖命令行单个任务的 host 参数。
+
+所以，一般会有如下顺序：
+        
+    1.单个任务，命令行主机列表(fab mytask:host=host1)会覆盖其他一切设置    
+    
+    2.单个任务，装饰器指定主机列表 (@hosts('host1'))会覆盖 env 设置    
+    
+    3.Fabfile 中全局 ENV 变量设置 (env.hosts = ['host1']) 会覆盖命令行全局指定主机列表    
+    
+    4.命令行全局指定主机列表 (--hosts=host1)仅初始化 ENV 变量，在其他三种情况都没有设置的话，使用它指定的值。
+        
+
+* 合并列表
+
+对于既指定host又指定role，或者指定多个host或者role时，相同主机在最终列表时可以实现合并：
+
+    from fabric.api import env, hosts, roles, run
+    
+    env.roledefs = {'role1': ['b', 'c']}
+    
+    @hosts('a', 'b')
+    @roles('role1')
+    
+    def mytask():    
+        run('ls /var/www')
+        
+最终主机列表就会是['a','b','c']，所有在列表中重复的主机只会执行一次。相当于现根据 hosts, roles 生成一张主机列表，而不是先根据 hosts，再根据 roles 执行。也即这时候它们的优先级相同，未出现覆盖情况。
+
+
+* 排除主机
+
+对于某些单独主机，也可以实现从列表中删除
+
+    $fab -R myrole -x host2,host5 mytask  
+    
+    <==>  
+    
+    $fab mytask:roles=myrole,exclude_hosts="host2;host5" 
+    
+    （同样可以用装饰器@exclude_hosts，或全局 ENV 变量指定）
+    
+若 myrole = ['host1','host2','host5'],结果主机列表就会是['host1']，用这些参数并没有改变 env.hosts,env.roles 等这些值，只是改变最终需要执行的主机列表。
