@@ -210,6 +210,5 @@ tags: ['HTTP','Note']
 
 ###参考资料###
 
-    1 [HTTP权威指南](http://book.douban.com/subject/10746113/)
-    
-    2 [HTTP协议详解](http://vdisk.weibo.com/s/bh3V-)
++ [HTTP权威指南](http://book.douban.com/subject/10746113/)
++ [HTTP协议详解](http://vdisk.weibo.com/s/bh3V-)
