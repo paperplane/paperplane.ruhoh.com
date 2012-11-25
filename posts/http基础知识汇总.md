@@ -39,7 +39,8 @@ tags: ['HTTP','Note']
 
 询问的信息便是<strong>WEB资源</strong>，这里是关于名为/的文档，资源既有类型也有相应名称。
 
-telnet/tcpdump查看报文内容
+再使用tcpdump查看报文内容，看看具体的电话内容：
+![tcpdump抓包]({{urls.media}}/tcpdump_http.png)
 
 * * *
 
@@ -99,9 +100,7 @@ telnet/tcpdump查看报文内容
     1.名称含义
     
         URI 统一资源表示符 Uniform Resource Identifier
-    
         URL 统一资源定位符 Uniform Resource Location
-    
         URN 统一资源名       Uniform Resource Name
     
     2.关系：服务器资源名称称为URI，URI的两种实现形式，分别是URL(最常见)和URN（实验阶段）
@@ -129,15 +128,10 @@ telnet/tcpdump查看报文内容
     常见类型
         
         HTML格式文本文件  text/html
-    
         普通ASCII文本文件  text/plain
-    
         JPEG版本图片文件   image/jpeg
-    
         GIF格式的图片文件  image/gif
-    
         APPLE的Quicktime电影 video/quicktime
-    
         微软PPT演示文件     application/vnd.ms-powerpoint
 
 + HTTP事务
@@ -150,52 +144,43 @@ telnet/tcpdump查看报文内容
 
     4 常见方法： 
         
-        GET 请求服务器发送某个资源
-    
-        PUT 
-    
-        POST
-    
-        HEAD
-    
-        TRACE
-    
-        DELETE
-    
-        OPTIONS
+        GET         请求服务器向客户端发送命名资源
+        PUT         将来自客户端的数据存储到一个命名的服务器资源中去
+        POST        将客户端数据发送到一个服务器网关应用程序
+        HEAD        仅发送命名响应中的HTTP资源
+        TRACE       对可能经过代理服务器传送到服务器上的报文进行追踪
+        DELETE      从服务器中删除命名资源
+        OPTIONS     决定可以在服务器上执行哪些方法
 
     5 常见状态码（状态码 原因短语 含义）
-    
+        
         1XX 信息性状态码
-    
         2XX 成功状态码
-    
-        200
-    
         3XX 重定向状态码
-    
-        302
-    
         4XX 客户端错误状态码
-    
-        404
-    
         5XX 服务器错误状态码
-    
-        500 内部服务器错误
-    
-        503 服务不可用
+        
+        100 Continue
+        200 OK 
+        302 Found
+        304 Not Modified
+        403 Forbidden
+        404 Not Found
+        500 Internal Server Error
+        502 Bad Gateway
+        503 Service Unavailable
 
     6 WEB页面可以包含多个对象，一个页面通常不是单个资源，而是一组资源的集合。复合WEB页面要为每个嵌入式资源使用以一个单独的HTTP事务
+
 + HTTP报文
 
     1 通用报文格式：请求报文和响应报文
     
     起始行：报文的第一行就是起始行，请求报文中说明要做什么，响应报文中说明出现了什么情况
     
-    请求报文起始行
+    请求报文起始行：包含一个方法和一个请求URL。方法描述了服务器应该执行的操作，请求URL描述了要对哪个资源执行这个方法。请求行还包含HTTP版本号。
     
-    响应报文起始行
+    响应报文起始行：包含了响应报文使用的HTTP版本、数字状态码、以及描述操作状态的文本形式的原因短语。
     
     首部字段：起始行后面有零个或多个首部字段。每个首部字段都包含一个名字一个值（Key-Value形式），以冒号隔开。首部以空行结束，添加一个首部字段和添加新行一样简单。
     
@@ -204,11 +189,27 @@ telnet/tcpdump查看报文内容
     2 首部字段与方法配合工作，决定了客户端和服务器能做什么事情。格式前面已经指明，首部字段域的名字与大小写无关。在请求和响应的报文中都可以用首部来提供信息。可以将首部分为五个主要类型。
 
     普通首部：客户端和服务器都可以使用的通用首部
+    
+    举例：Connection,Date,MIME-Version,Trailer,Transfor-Encoding,Update,Via,<strong>Cache-Control</strong>,Pragma
 
     请求首部：只在请求报文中有意义，用于说明是谁或什么在发送请求、请求原子何处、或者客户端喜好及能力。
 
+    举例：Host,From,Accept,Accept-*,Except,If-Match,If-*,<strong>If-Modified-Since,Cookie</strong>,Max-Forward
+
     响应首部：响应首部为客户端发送额外信息，比如是谁在发送响应、响应者的功能，甚至与响应相关的一些特殊指令。
+
+    举例：Age,Server,<strong>Set-Cookie</strong>,Title,Warning,Vary,Accept-Ranges,WWW-Authenticate
 
     实体首部：用来描述HTTP报文的负荷，它可以告知报文接收者它在对什么进行处理。请求和响应报文中都可能出现。
 
+    举例：Allow,Location,Content-Type,Content-Encoding,Content-*,<strong>Expries,Etag,Last-Modified</strong>
+
     扩展首部：非标准首部，开发者自建。
+
+    注：具体报文可以对比前面TCPdump抓包结果。具体后面有文章详细剖析。
+
++ 参考资料
+
+    1 [HTTP权威指南](http://book.douban.com/subject/10746113/)
+    
+    2 [HTTP协议详解](http://vdisk.weibo.com/s/bh3V-)
