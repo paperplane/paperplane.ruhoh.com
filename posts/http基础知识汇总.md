@@ -208,6 +208,8 @@ tags: ['HTTP','Note']
 
     注：具体报文可以对比前面TCPdump抓包结果。具体后面有文章详细剖析。
 
+* * *
+
 ###参考资料###
 
 + [HTTP权威指南](http://book.douban.com/subject/10746113/)
