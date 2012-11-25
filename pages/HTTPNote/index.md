@@ -14,10 +14,11 @@ tags: ['HTTP','Note']
 + [HTTP基础知识汇总](http://paperplane.ruhoh.com/notes/http%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/)
 + URL原理及设计[未完]
     
-    URL基础知识
-    URL设计原则
-    ShortURL设计
-    URL展望
+    大概目录:
+        URL基础知识
+        URL设计原则
+        ShortURL设计
+        URL展望
 
 + TCPDump抓包与HTTP报文分析[未完]
 
