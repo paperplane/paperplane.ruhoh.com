@@ -15,8 +15,11 @@ tags: ['HTTP','Note']
 + URL原理及设计[未完]
 
     1 URL基础知识
+    
     2 URL设计原则
+    
     3 ShortURL设计
+    
     4 URL展望
 
 + TCPDump抓包与HTTP报文分析[未完]
