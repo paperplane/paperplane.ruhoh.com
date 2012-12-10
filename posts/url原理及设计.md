@@ -19,7 +19,7 @@ tags: ['HTTP','Note']
    
     \<scheme\>://\<user\>:\<password\>@\<host\>:\<port\>/\<path\>;\<parameters\>?\<query\>#\<frag\>
    
-    几乎没有URL能够包含所有组件，一般都只包含最重要的三部分：方案(<scheme>)、主机(<host>)和路径(<path>)
+    几乎没有URL能够包含所有组件，一般都只包含最重要的三部分：方案(\<scheme\>)、主机(\<host\>)和路径(\<path\>)
 
 + **URL语法**
 
@@ -55,12 +55,12 @@ tags: ['HTTP','Note']
             <td>路径</td>
             <td>服务器上资源的本地名，由一个&quot;/&quot;将其与其他前面的组件分隔开。路径组件语法与服务器和方案有关</td>
             <td>无</td>
-            <td><a href="http://www.joes-hardware.com/seasonal/index-fall.html">http://www.joes-hardware.com/seasonal/index-fall.html</a>这其中<a href="http://www.joes-hardware.com/seasonal/index-fall.html" style="font-size: 12px; line-height: 18px; white-space: pre-wrap;">/seasonal/index-fall.html</a>则为路径</td>
+            <td><a href="http://www.joes-hardware.com/seasonal/index-fall.html">http://www.joes-hardware.com/seasonal/index-fall.html</a>这其中<a href="http://www.joes-hardware.com/seasonal/index-fall.html">/seasonal/index-fall.html</a>则为路径</td>
         </tr>
         <tr>
             <td>参数</td>
             <td>某些方案会用这个组件来指定输入参数。参数为名/值对。URL中可包含多个参数字段，它们之间以及与路径的其余部分用&quot;;&quot;分隔</td>
-            <td>无</td><td><a href="ftp://prep.ai.mit.edu/gnu;type=d">ftp://prep.ai.mit.edu/gnu;type=d</a>中<a href="ftp://prep.ai.mit.edu/gnu;type=d" style="font-size: 12px; line-height: 18px; white-space: pre-wrap;">type=d</a>为参数。<br/><a href="http://joes-hardware.com/hammers;sale=false/index.html;graphics=true">http://joes-hardware.com/hammers;sale=false/index.html;graphics=true</a><br/>路径组件每段都提供自己的参数</td>
+            <td>无</td><td><a href="ftp://prep.ai.mit.edu/gnu;type=d">ftp://prep.ai.mit.edu/gnu;type=d</a>中<a href="ftp://prep.ai.mit.edu/gnu;type=d">type=d</a>为参数。<br/><a href="http://joes-hardware.com/hammers;sale=false/index.html;graphics=true">http://joes-hardware.com/hammers;sale=false/index.html;graphics=true</a><br/>路径组件每段都提供自己的参数</td>
         </tr>
         <tr>
             <td>查询</td>
@@ -70,7 +70,7 @@ tags: ['HTTP','Note']
         <tr>
             <td>片段</td>
             <td>一小片或一部分资源的名字。引用对象时，不会讲frag字段传送给服务器，这个字段在客户端内部使用。通过&quot;#&quot;将其与URL其余部分隔开</td>
-            <td>无</td><td><a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">http://twitter.github.com/bootstrap/scaffolding.html#gridSystem</a><br/>片段<a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem" style="font-size: 12px; line-height: 18px; white-space: pre-wrap;">gridSystem</a>引用了<a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem" style="font-size: 12px; line-height: 18px; white-space: pre-wrap;">/scaffolding.html</a>页面的一部分，这部分名为<a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem" style="font-size: 12px; line-height: 18px; white-space: pre-wrap;">gridSystem</a>注意：HTTP服务器只处理整个对象，而不是对象的片段，客户端不能讲片段传给服务器。浏览器从服务器获取整个资源后，会根据片段显示感兴趣的那部分资源</td>
+            <td>无</td><td><a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">http://twitter.github.com/bootstrap/scaffolding.html#gridSystem</a><br/>片段<a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">gridSystem</a>引用了<a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">/scaffolding.html</a>页面的一部分，这部分名为<a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">gridSystem</a>注意：HTTP服务器只处理整个对象，而不是对象的片段，客户端不能讲片段传给服务器。浏览器从服务器获取整个资源后，会根据片段显示感兴趣的那部分资源</td>
         </tr>
     </tbody>
 </table>
