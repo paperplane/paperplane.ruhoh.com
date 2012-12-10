@@ -70,10 +70,13 @@ tags: ['HTTP','Note']
         <tr>
             <td>片段</td>
             <td>一小片或一部分资源的名字。引用对象时，不会讲frag字段传送给服务器，这个字段在客户端内部使用。通过&quot;#&quot;将其与URL其余部分隔开</td>
-            <td>无</td><td><a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">http://twitter.github.com/bootstrap/scaffolding.html#gridSystem</a><br/>片段<a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">gridSystem</a>引用了<a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">/scaffolding.html</a>页面的一部分，这部分名为<a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">gridSystem</a>注意：HTTP服务器只处理整个对象，而不是对象的片段，客户端不能讲片段传给服务器。浏览器从服务器获取整个资源后，会根据片段显示感兴趣的那部分资源</td>
+            <td>无</td>
+            <td><a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">http://twitter.github.com/bootstrap/scaffolding.html#gridSystem</a><br/>片段<a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">gridSystem</a>引用了<a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">/scaffolding.html</a>页面的一部分，这部分名为<a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">gridSystem</a></td>
         </tr>
     </tbody>
 </table>
+    
+注意：HTTP服务器只处理整个对象，而不是对象的片段，客户端不能讲片段传给服务器。浏览器从服务器获取整个资源后，会根据片段显示感兴趣的那部分资源
 
 常见方案URL格式与举例
 
@@ -181,12 +184,12 @@ tags: ['HTTP','Note']
 
     URL的最大长度是多少？W3C的HTTP协议并没有限定，然而，在实际应用中，经过试验，不同浏览器和Web服务器有不同的约定：
 
-        **IE**的URL长度上限是2083字节，其中纯路径部分不能超过2048字节。
-        **Firefox**浏览器的地址栏中超过65536字符后就不再显示。
-        **Safari**浏览器一致测试到80000字符还工作得好好的。
-        **Opera**浏览器测试到190000字符的时候，还正常工作。
-        **Apache Web服务器**在接收到大约4000字符长的URL时候产生"413 Entity Too Large"错误。
-        **IIS**默认接收的最大URL是16384字符。
+        IE的URL长度上限是2083字节，其中纯路径部分不能超过2048字节。
+        Firefox浏览器的地址栏中超过65536字符后就不再显示。
+        Safari浏览器一致测试到80000字符还工作得好好的。
+        Opera浏览器测试到190000字符的时候，还正常工作。
+        Apache Web服务器在接收到大约4000字符长的URL时候产生"413 Entity Too Large"错误。
+        IIS默认接收的最大URL是16384字符。
 
 + **自动扩展URL**
 
@@ -204,7 +207,7 @@ tags: ['HTTP','Note']
 
 + **尽可能用户友好**
 
-    这是 URL 设计的根本，你的 URL 应该为最终用户而设计。保持 URL 友好的一个好办法是在保证可读性的同时让它尽可能短。短地址的崛起虽然能很好地使地址变短，却失去了了可读性。
+    这是 URL 设计的根本，你的 URL 应该为最终用户而设计。保持 URL 友好的一个好办法是在保证可读性的同时让它尽可能短。短地址的崛起虽然能很好地使地址变短，却在一定程度下失去了可读性。
 
 + **保持一致性**
 
@@ -212,7 +215,13 @@ tags: ['HTTP','Note']
 
 + **可预测的URL**
 
-    这也是 URL 一致性的一个表现，如果你的 URL 拥有很好的一致性，用户可以根据 URL 猜测别的内容的 URL，假如 /events/2010/01 指向 2010 年 1 月份的日程内容，那 /events/2009/01 应当指向 2009 年 1 月的日程。 /events/2010 应当指向 2010 年全年的日程。 /events/2010/01/21 应当指向2010年1月21日的日程。
+    这也是 URL 一致性的一个表现，如果你的 URL 拥有很好的一致性，用户可以根据 URL 猜测别的内容的 URL，假如 /events/2010/01 指向 2010 年 1 月份的日程内容，那
+    
+    /events/2009/01 应当指向 2009 年 1 月的日程。 
+    
+    /events/2010 应当指向 2010 年全年的日程。 
+    
+    /events/2010/01/21 应当指向2010年1月21日的日程。
 
 + **细节注意点**
 
