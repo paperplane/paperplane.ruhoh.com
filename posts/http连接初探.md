@@ -1,8 +1,9 @@
 ---
-title:
+title: HTTP连接初探
 date: '2013-01-03'
-description:
-categories:
+description: 
+categories: Notes
+tags: ['HTTP','Note']
 ---
 
 ###概述###
