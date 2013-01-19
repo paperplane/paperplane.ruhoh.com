@@ -1,5 +1,5 @@
 ---
-title: Zabbix API简介及使用
+title: ZABBIX API简介及使用
 date: '2013-01-19'
 description:
 categories: ['Zabbix','OPS']
