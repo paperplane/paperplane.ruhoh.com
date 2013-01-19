@@ -5,6 +5,7 @@ description:
 categories: ['Mcollective','OPS']
 tags: Mcollective
 ---
+<strong>[Mcollective中文文档目录](http://paperplane.ruhoh.com/documentation/mcollective/)</strong>
 
 这一部分主要包括了后面经常会用到的MCollective术语。
 

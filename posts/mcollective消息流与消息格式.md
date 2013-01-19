@@ -5,6 +5,7 @@ description:
 categories: ['Mcollective','OPS']
 tags: Mcollective
 ---
+<strong>[Mcollective中文文档目录](http://paperplane.ruhoh.com/documentation/mcollective/)</strong>
 
 ###消息流###
 

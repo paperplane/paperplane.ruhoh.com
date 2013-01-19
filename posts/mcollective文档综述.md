@@ -5,6 +5,7 @@ description:
 categories: ['Mcollective','OPS']
 tags: Mcollective
 ---
+<strong>[Mcollective中文文档目录](http://paperplane.ruhoh.com/documentation/mcollective/)</strong>
 
 文档共分为概述篇，使用篇，插件篇，原理篇，集成篇，编程篇 六大部分，各部分相互联系，相互引用。没有绝对的划分。本文档不讨论任何关于安装配置问题以及插件安装问题。划分时最头疼的是关于安全这部分的划分，原定计划增加安全篇部分。但考虑到具体安全涉及到中间件安全、安全插件，SimpleRPC安全（授权、认证和审计）等在相应插件，中间件和编程部分也会涉及。故将安全概述放在原理部分讨论，以期对整个流程有个完整认识，具体安全环节在具体环节再做讨论。
 

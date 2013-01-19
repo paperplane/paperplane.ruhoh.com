@@ -5,8 +5,9 @@ description:
 categories: ['Mcollective','OPS']
 tags: 'Mcollective'
 ---
+<strong>[Mcollective中文文档目录](http://paperplane.ruhoh.com/documentation/mcollective/)</strong>
 
-##简介
+###简介###
 
 MCollective 是一个构建服务器编排(Server Orchestration)和并行工作执行系统的框架。
 
