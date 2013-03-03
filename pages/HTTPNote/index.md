@@ -19,19 +19,19 @@ tags: ['HTTP','Note']
 
 寒假终于结束，HTTP的第一遍也已经结束。后面的笔记我将阅读后的笔记目录先附上，随着第二遍阅读的进度完成每篇笔记。【笔记目录虽然很多和原书目录重复，但这更是个人重新总结之后的结果】。也会在每部分增加自己需要补充的内容。此次每篇读书笔记的目录并不是最终目录，也会随着补充不断完善。
 
-+ [WEB服务器]()<font color="#33CC00">目录完成</font>
-+ [代理]()<font color="#33CC00">目录完成</font>
-+ [缓存]()<font color="#33CC00">目录完成</font>
++ [WEB服务器](http://paperplane.ruhoh.com/notes/web%E6%9C%8D%E5%8A%A1%E5%99%A8/)<font color="#33CC00">目录完成</font>
++ [代理](http://paperplane.ruhoh.com/notes/%E4%BB%A3%E7%90%86/)<font color="#33CC00">目录完成</font>
++ [缓存](http://paperplane.ruhoh.com/notes/%E7%BC%93%E5%AD%98/)<font color="#33CC00">目录完成</font>
 + [网关](http://paperplane.ruhoh.com/%E7%BD%91%E5%85%B3/)<font color="#33CC00">目录完成</font>
-+ [隧道]()<font color="#33CC00">目录完成</font>
-+ [WEB机器人]()<font color="#33CC00">目录完成</font>
-+ [HTTP-NG]()<font color="#33CC00">目录完成</font>
-+ [用户识别]()<font color="#33CC00">目录完成</font>
-+ [用户认证]()<font color="#33CC00">目录完成</font>
-+ [HTTPS]()<font color="#33CC00">目录完成</font>
-+ [实体与编码]()<font color="#33CC00">目录完成</font>
-+ [内容协商与转码]()<font color="#33CC00">目录完成</font>
-+ [主机托管]()<font color="#33CC00">目录完成</font>
++ [隧道](http://paperplane.ruhoh.com/notes/%E9%9A%A7%E9%81%93/)<font color="#33CC00">目录完成</font>
++ [WEB机器人](http://paperplane.ruhoh.com/notes/web%E6%9C%BA%E5%99%A8%E4%BA%BA/)<font color="#33CC00">目录完成</font>
++ [HTTP-NG](http://paperplane.ruhoh.com/notes/http-ng/)<font color="#33CC00">目录完成</font>
++ [用户识别](http://paperplane.ruhoh.com/notes/%E7%94%A8%E6%88%B7%E8%AF%86%E5%88%AB/)<font color="#33CC00">目录完成</font>
++ [用户认证](http://paperplane.ruhoh.com/notes/%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81/)<font color="#33CC00">目录完成</font>
++ [HTTPS](http://paperplane.ruhoh.com/notes/https/)<font color="#33CC00">目录完成</font>
++ [实体与编码](http://paperplane.ruhoh.com/notes/%E5%AE%9E%E4%BD%93%E4%B8%8E%E7%BC%96%E7%A0%81/)<font color="#33CC00">目录完成</font>
++ [内容协商与转码](http://paperplane.ruhoh.com/notes/%E5%86%85%E5%AE%B9%E5%8D%8F%E5%95%86%E4%B8%8E%E8%BD%AC%E7%A0%81/)<font color="#33CC00">目录完成</font>
++ [主机托管](http://paperplane.ruhoh.com/notes/%E4%B8%BB%E6%9C%BA%E6%89%98%E7%AE%A1/)<font color="#33CC00">目录完成</font>
 + [重定向]()<font color="#33CC00">目录完成</font>
 + [日志记录]()<font color="#33CC00">目录完成</font>
 + [HTTP方法回顾总结]()<font color="#33CC00">目录完成</font>
