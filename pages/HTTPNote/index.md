@@ -22,7 +22,7 @@ tags: ['HTTP','Note']
 + [WEB服务器]()<font color="#33CC00">目录完成</font>
 + [代理]()<font color="#33CC00">目录完成</font>
 + [缓存]()<font color="#33CC00">目录完成</font>
-+ [网关]()<font color="#33CC00">目录完成</font>
++ [网关](http://paperplane.ruhoh.com/%E7%BD%91%E5%85%B3/)<font color="#33CC00">目录完成</font>
 + [隧道]()<font color="#33CC00">目录完成</font>
 + [WEB机器人]()<font color="#33CC00">目录完成</font>
 + [HTTP-NG]()<font color="#33CC00">目录完成</font>

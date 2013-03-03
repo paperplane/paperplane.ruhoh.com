@@ -2,7 +2,8 @@
 title:
 date: '2013-02-28'
 description:
-categories:
+categories: Notes
+tags: ['HTTP','Note']
 ---
 
 WEB服务器部分主要包括三部分内容：
