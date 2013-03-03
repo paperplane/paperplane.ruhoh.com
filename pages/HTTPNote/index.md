@@ -16,10 +16,27 @@ tags: ['HTTP','Note']
 + [HTTP报文与抓包分析](http://paperplane.ruhoh.com/notes/http%E6%8A%A5%E6%96%87%E4%B8%8E%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/) <font color="#33CC00">已完成</font>
 + [HTTP连接初探](http://paperplane.ruhoh.com/notes/http%E8%BF%9E%E6%8E%A5%E5%88%9D%E6%8E%A2/) <font color="#33CC00">最新完成</font>
 + 深入理解HTTP持久化连接 <font color="#33CC00">未完成</font>
-+ WEB服务器之LEMP基本环境配置 <font color="#33CC00">未完成</font>
-+ WEB服务器之Nginx HTTP配置说明 <font color="#33CC00">未完成</font>
-+ WEB服务器之Nginx Apache比较 <font color="#33CC00">未完成</font>
-+ WEB服务器之实现自己的简易服务器 <font color="#33CC00">未完成</font>
+
+寒假终于结束，HTTP的第一遍也已经结束。后面的笔记我将阅读后的笔记目录先附上，随着第二遍阅读的进度完成每篇笔记。【笔记目录虽然很多和原书目录重复，但这更是个人重新总结之后的结果】。也会在每部分增加自己需要补充的内容。此次每篇读书笔记的目录并不是最终目录，也会随着补充不断完善。
+
++ [WEB服务器]()<font color="#33CC00">目录完成</font>
++ [代理]()<font color="#33CC00">目录完成</font>
++ [缓存]()<font color="#33CC00">目录完成</font>
++ [网关]()<font color="#33CC00">目录完成</font>
++ [隧道]()<font color="#33CC00">目录完成</font>
++ [WEB机器人]()<font color="#33CC00">目录完成</font>
++ [HTTP-NG]()<font color="#33CC00">目录完成</font>
++ [用户识别]()<font color="#33CC00">目录完成</font>
++ [用户认证]()<font color="#33CC00">目录完成</font>
++ [HTTPS]()<font color="#33CC00">目录完成</font>
++ [实体与编码]()<font color="#33CC00">目录完成</font>
++ [内容协商与转码]()<font color="#33CC00">目录完成</font>
++ [主机托管]()<font color="#33CC00">目录完成</font>
++ [重定向]()<font color="#33CC00">目录完成</font>
++ [日志记录]()<font color="#33CC00">目录完成</font>
++ [HTTP方法回顾总结]()<font color="#33CC00">目录完成</font>
++ [HTTP首部回顾总结]()<font color="#33CC00">目录完成</font>
+
 
 感谢[赵老师](http://weibo.com/jeffz)的[学生资助计划](https://github.com/JeffreyZhao/ssp)。不仅为我们提供了阅读材料--[《HTTP权威指南》](http://book.douban.com/subject/10746113/)，也提供了这样一个读书交流平台。当然同时希望更多的同学和相关人士加入进来。
 
