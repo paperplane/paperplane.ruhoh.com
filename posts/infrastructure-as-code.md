@@ -1,7 +1,7 @@
 ---
 title: Infrastructure As Code
 date: '2013-03-11'
-description: 
+tags: ['Puppet','DevOps']
 categories: DevOps
 ---
 
