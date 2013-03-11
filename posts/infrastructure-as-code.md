@@ -49,7 +49,7 @@ DevOps已经发展很久，现在它被标准化为像Chef或Puppet这样的工�
 
 3. 当进行变更时进行持续测试
 
-翻译整理自：[Carlos Sanchez's Weblog](http://blog.csanchez.org/2012/03/13/infrastructure-as-code/)
+翻译整理自：[Carlos Sanchez\''s Weblog](http://blog.csanchez.org/2012/03/13/infrastructure-as-code/)
 
 ***
 
