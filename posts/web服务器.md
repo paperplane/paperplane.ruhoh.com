@@ -1,5 +1,5 @@
 ---
-title: web server
+title: Web Server
 date: '2013-03-10'
 description:
 categories: Notes
