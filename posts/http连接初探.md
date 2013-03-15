@@ -1,5 +1,5 @@
 ---
-title: HTTP连接初探
+title: HTTP Connection
 date: '2013-01-03'
 description: 
 categories: Notes
