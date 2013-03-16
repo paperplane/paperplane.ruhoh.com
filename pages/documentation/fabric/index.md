@@ -14,15 +14,15 @@ Fabric 既是一个 python(2.5+)类库也是一个基于 SSH 的应用程序部�
 
 * * *
 
-+ [简介](http://paperplane.ruhoh.com/fabric/fabric%E7%B3%BB%E5%88%97%E4%B9%8B%E7%AE%80%E4%BB%8B/)
-+ [环境字典](http://paperplane.ruhoh.com/fabric/fabric%E7%B3%BB%E5%88%97%E4%B9%8B%E7%8E%AF%E5%A2%83%E5%AD%97%E5%85%B8/)
-+ [主机列表](http://paperplane.ruhoh.com/fabric/fabric%E7%B3%BB%E5%88%97%E4%B9%8B%E4%B8%BB%E6%9C%BA%E5%88%97%E8%A1%A8/)
-+ 任务列表
-+ 执行模式
-+ 工具命令
-+ 两个文件
-+ 远程交互
-+ 使用类库
-+ SSH行为
-+ 管理输出
-+ 附录
++ [简介]({{urls.posts}}/fabric/intro-to-fabric)
++ [环境字典]({{urls.posts}}/fabric/fabric-env)
++ [主机列表]({{urls.posts}}/fabric/host-list)
++ [任务列表]({{urls.posts}}/fabric/task-list)
++ [执行模式]({{urls.posts}}/fabric/execution-mode)
++ [工具命令]({{urls.posts}}/fabric/fab-command)
++ [两个文件]({{urls.posts}}/fabric/fabfile-fabricrc)
++ [远程交互]({{urls.posts}}/fabric/remote-interaction)
++ [使用类库]({{urls.posts}}/fabric/use-fabric-library)
++ [SSH行为]({{urls.posts}}/fabric/ssh-behavior)
++ [管理输出]({{urls.posts}}/fabric/manage-output)
++ [附录]({{urls.posts}}/fabric/fabric-api)
