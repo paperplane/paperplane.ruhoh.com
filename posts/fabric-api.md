@@ -208,7 +208,7 @@ fabric.context_managers.settings(\*args, **kwargs) setting(嵌套的上下文管
 
 很多时候用法类似scp或cp,用于上传下载文件，它的本地和远程路径实现发别是通过lcd和cd实现，所以用上下文管理器的cd会影响远程路径参数，而lcd会影响本地路径参数。这里主要是弄明白本地路径和远程路径的表示，它们将路径分成host/dirname/basename/path，可分别用基于字典的方式来指定，这里具体可查文档说明。
 
-fabric.operations.open_shell(command=None) 在远程主机调用交互式shell。
+    fabric.operations.open_shell(command=None) 在远程主机调用交互式shell。
 
 如果命令给定，它将会在调用用户之前被送至管道。当你需要一个完全基于shell调用和一系列命令
 
@@ -218,9 +218,11 @@ fabric.operations.open_shell(command=None) 在远程主机调用交互式shell�
 
 不会有fabric的错误处理机制。
 
-fabric.operations.reboot(wait=120) 重 启 远 程 机 器 , 会 暂 时 调 整fabric 冲连接设置以保证在 wait 时间内重连接成功。
+    fabric.operations.reboot(wait=120) 
+    
+重启远程机器,会暂时调整fabric冲连接设置以保证在wait时间内重连接成功。
 
-fabric.operations.run(command, shell=True, pty=True, combine_stderr=True)在远程主机执行shell命令。
+    fabric.operations.run(command, shell=True, pty=True, combine_stderr=True)在远程主机执行shell命令。
 
 如果shell为True,run会将给定的命令通过env.shell设定的shell上解释。命令参数中任何双引号“和$符都会被忽略。
 
@@ -234,7 +236,7 @@ run会将远程程序的标准输出作为一个单一（可能多行）string�
 
 同样地，如果你需要编程检测远程程序的标准错误流（利用函数返回值的stderr属性），你可以设置combine_stderr=False。这样做会使你终端输出很混乱（虽然返回strings能合理地分开）。但是这是你单独获取标准错误流的唯一方式。设置pty=combine_stderr=False。
 
-fabric.operations.sudo(command, shell=True, pty=True, combine_stderr=True, user=None)
+    fabric.operations.sudo(command, shell=True, pty=True, combine_stderr=True, user=None)
 
 以上连个命令都是在远程执行命令,后者拥有特殊权限,关于参数含义已经在远程交互中详细介绍和run中介绍。
 
@@ -246,13 +248,12 @@ sudo会多接受一个user的参数，这用来允许你在其他用户而不是
 
 此外上述各函数都有相应的参数为（*args, **kwargs）的重载函数。
 
-fabric.operations.local(command, capture=False)
+    fabric.operations.local(command, capture=False)
 
 使用 python subprocess 模块实现且 shell=True,local 现在能够打印和捕捉输出,正如 run/sudo 一样。caputure 参数允许你选择是打印还是捕捉输出。
 
-caputure=False 时,本地 subprocess 的标准输出和错误直接显示在终端,可通过全局输出控制,output.stdout 等,此时返回为空。
-
-caputure=True 时,命令 stdout 作为类 string 对象返回,同 run/sudo 一样,返回值有 return_code,stderr,failed 和 succeeded 属性。
+    caputure=False 时,本地 subprocess 的标准输出和错误直接显示在终端,可通过全局输出控制,output.stdout 等,此时返回为空。
+    caputure=True 时,命令 stdout 作为类 string 对象返回,同 run/sudo 一样,返回值有 return_code,stderr,failed 和 succeeded 属性。
 
 
 #####Tasks#####
@@ -278,17 +279,12 @@ host/hosts/role/roles、exclude_hosts都可以作为参数传递进去来设置�
 
 #####Utils#####
 
-fabric.utils.abort(msg)放弃执行，打印msg为stderr和错误状态。
-
-fabric.utils.error(message, func=None, exception=None, stdout=None, stderr=None)调用func，给出指定错误、输出等信息。
-
-fabric.utils.fastprint(text, show_prefix=False, end='', flush=True)
-
-fabric.utils.indent(text, spaces=4, strip=False)同puts相同，只是不同的参数，快速打印文本text,不用等行结尾。
-
-fabric.utils.puts(text, show_prefix=None, end='\n', flush=False)
-
-fabric.utils.warn(msg)打印警告信息，但是不放弃执行。
+    fabric.utils.abort(msg)放弃执行，打印msg为stderr和错误状态。
+    fabric.utils.error(message, func=None, exception=None, stdout=None, stderr=None)调用func，给出指定错误、输出等信息。
+    fabric.utils.fastprint(text, show_prefix=False, end='', flush=True)
+    fabric.utils.indent(text, spaces=4, strip=False)同puts相同，只是不同的参数，快速打印文本text,不用等行结尾。
+    fabric.utils.puts(text, show_prefix=None, end='\n', flush=False)
+    fabric.utils.warn(msg)打印警告信息，但是不放弃执行。
 
 ***
 
@@ -298,28 +294,23 @@ fabric.utils.warn(msg)打印警告信息，但是不放弃执行。
 
 #####console output 工具#####
 
-confirm(询问用户问题，返回 Y/N，比如“是否继续”这样的问题) 
+    confirm(询问用户问题，返回 Y/N，比如“是否继续”这样的问题) 
 
 #####django 集成#####
 
-project:设置 DJANGO_SETTINGS_MODULE to '<name>.settings'. 
-
-setting module：设置 DJANGO_SETTINGS_MODULE 
+    project:设置 DJANGO_SETTINGS_MODULE to '<name>.settings'. 
+    setting module：设置 DJANGO_SETTINGS_MODULE 
 
 这个集成主要是用来做一些django设置方面的事，目前不成熟。
 
 #####文件和目录管理#####
 
-append(附加，类似 java 中 FileWriter 的 append 方法) 
-
-contains(返回文件是否存在该文本) 
-
-exits(返回远程主机是否存在该路径) 
-
-first(返回多个文件中第一个找到的) 
-
-upload_template(上传远程主机模板) 
+    append(附加，类似 java 中 FileWriter 的 append 方法) 
+    contains(返回文件是否存在该文本) 
+    exits(返回远程主机是否存在该路径) 
+    first(返回多个文件中第一个找到的) 
+    upload_template(上传远程主机模板) 
 
 #####项目工具#####
 
-rsync_project(使用 rsync 同步远程目录与当前项目目录)
+    rsync_project(使用 rsync 同步远程目录与当前项目目录)
