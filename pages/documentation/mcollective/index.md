@@ -27,7 +27,7 @@ tags: ['Mcollective','OPS']
 
 + 使用篇
 
-    * [使用MCollective命令行应用程序]({{urls.posts}}/mcollective/use-mcollective-cli.md)
+    * [使用MCollective命令行应用程序]({{urls.posts}}/blog/use-mcollective-cli.md)
     * 自定义报告
     * 控制守护进程
     * 使用过滤器
