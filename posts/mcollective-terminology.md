@@ -5,8 +5,6 @@ description:
 categories: ['Mcollective','OPS']
 tags: Mcollective
 ---
-<strong>[Mcollective中文文档目录](http://paperplane.ruhoh.com/documentation/mcollective/)</strong>
-
 这一部分主要包括了后面经常会用到的MCollective术语。
 
 最重要的概念是server,client。这与C/S架构中客户端/服务器端没有必然关系，在MCollective中是多个server<----->一个client的结构

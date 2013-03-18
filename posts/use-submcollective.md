@@ -5,7 +5,6 @@ description:
 categories: ['Mcollective','OPS']
 tags: Mcollective
 ---
-<strong>[Mcollective中文文档目录](http://paperplane.ruhoh.com/documentation/mcollective/)</strong>
 
 分区既是为了解决单一广播域问题，也是对安全的一种考虑。
 

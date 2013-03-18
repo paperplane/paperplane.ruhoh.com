@@ -6,8 +6,6 @@ categories: ['Mcollective','OPS']
 tags: Mcollective
 ---
 
-<strong>[Mcollective中文文档目录](http://paperplane.ruhoh.com/documentation/mcollective/)</strong>
-
 这部分集中概括MCollective所解决问题及选择MCollective的原因，并比较MCollective与SSH循环的优势所在。并简单讨论MCollective给Puppet带来的改变。
 
 + 解决问题

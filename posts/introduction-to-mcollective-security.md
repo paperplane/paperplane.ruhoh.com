@@ -6,8 +6,6 @@ categories: ['Mcollective','OPS']
 tags: Mcollective
 ---
 
-<strong>[Mcollective中文文档目录](http://paperplane.ruhoh.com/documentation/mcollective/)</strong>
-
 由于mcollective采用广播范式分发请求，安全是一个复杂的主题。
 
 这些讨论主要集中在加强基于SSL和基于AES+RSA的安全插件,这些虽然不是默认做法或者说仅仅是个选项，但却是目前最安全的做法。SSL安全插件和AES安全插件提供强有力的主叫(caller)识别，这被SimpleRPC框架用于授权和审计。
