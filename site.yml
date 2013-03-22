@@ -10,6 +10,8 @@ navigation :
   - archive.html
   - categories.html
   - documentation/fabric/index.md
+  - DevOps/index.md
+  - Linux/index.md
   - documentation/mcollective/index.md  
   - HTTPNote/index.md
   - tags.html
