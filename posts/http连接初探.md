@@ -3,7 +3,7 @@ title: HTTP Connection
 date: '2013-01-03'
 description: 
 categories: Notes
-tags: ['HTTP','Note']
+tags: ['HTTP','Python','Note']
 ---
 
 ###概述###
