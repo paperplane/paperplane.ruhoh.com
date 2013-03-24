@@ -9,12 +9,16 @@ tags: ['Puppet','DevOps','Python']
 
 ####概述####
 
-puppet尽量依靠标准。就安全而言，它使用标准的SSL证书用于client和master的认证。这意味着客户端验证它与正确的server通信而且server验证它与正确的客户端通信。由于为每个client颁发签名证书和管理自己认证权限复杂性的代价，puppet包括了它自己的认证授权（CA）。puppet并对使用这个认证授权进行了优化而且它也可被用于其他用途的生成证书。puppet证书管理主要目标是保持简单,并尽可能不让其更加明显。
+puppet尽量依靠标准。就安全而言，它使用标准的SSL证书用于client和master的认证。这意味着客户端验证它与正确的server通信而且server验证它与正确的客户端通信。
+
+由于为每个client颁发签名证书和管理自己认证权限复杂性的代价，puppet包括了它自己的认证授权（CA）。puppet并对使用这个认证授权进行了优化而且它也可被用于其他用途的生成证书。puppet证书管理主要目标是保持简单,并尽可能不让其更加明显。
+
 puppetca是用于管理puppet认证授权的应用程序。它允许生成，撤销、签名、删除证书和显示签名请求列表。默认情况下，puppetmastered有认证授权中心功能。
 
 <strong>证书</strong>
 
 在puppetd或者puppetmasterde第一次执行时client和master自动生成证书，分别地，puppetd(client端puppet)，第一次连接master时会接受master证书并且保存。至此之后就会验证从master处获得证书的唯一性。
+
 也可以通过手动将master证书通过安全通道复制到client端，需要注意中间人攻击。
 
 ***
@@ -134,3 +138,22 @@ puppetca是用于管理puppet认证授权的应用程序。它允许生成，撤
 
     $ puppetca --list
     $ puppetca --sign puppetclient-37.domain.net
+
+
+<strong>Puppet实现自动认证</strong>
+
+1.puppetmaster给客户端签名,虽然方便了我们,但必须要注意安全,如果某个主机,正好请求到puppetmaster,你又自动签名,而它又执行了你默认的类,而类里有些秘密数据,那可就麻烦了.
+
+2.实现puppet 客户端自动签名,需要两个步骤.
+
+a. vim /etc/puppet/puppet.conf    2.6 版本为[master],2.7 版本为[main] 段,添加如下两行.
+
+    autosign=true
+    autosign = /etc/puppet/autosign.conf
+
+b./etc/puppet/autosign.conf 
+    
+    *.test.com    # 域名
+    192.168.1.0/24  #IP段
+
+完成以上步骤即可实现自动给客户端ssl签名.
