@@ -13,9 +13,11 @@ tags: ['Puppet','DevOps']
 在介绍之前，我们先看两个关于Puppet的**经典**图。一方面希望这两幅图能帮助理解，另一方面也希望下面的解释能帮助理解这两幅图。
 
 Puppet架构图
+
 ![图片]({{urls.media}}/puppet/puppet-arch.png)
 
 Puppet工作流程图
+
 ![图片]({{urls.media}}/puppet/puppet-workflow.png)
 
 ***
