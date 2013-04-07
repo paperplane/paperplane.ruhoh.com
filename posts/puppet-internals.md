@@ -2,7 +2,8 @@
 title: Puppet Internals
 date: '2013-04-08'
 description:
-categories:
+categories: ['Puppet']
+tags: ['Puppet','DevOps']
 ---
 
 ##Puppet Internals##
