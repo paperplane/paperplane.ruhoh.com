@@ -1,3 +1,11 @@
+---
+title: Mcollective Security
+date: '2013-04-22'
+description:
+categories: ['Mcollective','OPS']
+tags: Mcollective
+---
+
 <html>
     <head>
         <title>Evernote Export</title>
