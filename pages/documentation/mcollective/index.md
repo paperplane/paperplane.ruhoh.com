@@ -27,7 +27,7 @@ tags: ['Mcollective','OPS']
 + <strong>配置篇</strong> <font color="#33CC00">最新完成</font>
 
     * [ActiveMQ Config For MCollective Use]({{urls.posts}}/mcollective/activemq-config-for-mcollective)
-    * [MCollective Security Summarize]({{urls.posts}}/mcollective/mcollective-security)
+    * [MCollective Security]({{urls.posts}}/mcollective/mcollective-security)
     * [A Way To Deploy MCollective in Production Environment]({{urls.posts}}/mcollective/deploy-mcollective-in-production-environment)
 
 + 使用篇
