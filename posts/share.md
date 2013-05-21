@@ -22,7 +22,7 @@ tags: ['Share']
     <body>
         <div>
             <div style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;">
-                <a href="{{urls.media}}/pdf/share.pdf">
+                <a href="{{urls.media}}/pdf/share.pdf">Click To Check Slide
                 </a>
             </div>
         </div>
