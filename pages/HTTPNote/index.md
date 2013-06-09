@@ -16,9 +16,6 @@ tags: ['HTTP','Note']
 + [HTTP报文与抓包分析]({{urls.posts}}/notes/http%E6%8A%A5%E6%96%87%E4%B8%8E%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/) <font color="#33CC00">完成</font>
 + [HTTP连接初探]({{urls.posts}}/notes/http%E8%BF%9E%E6%8E%A5%E5%88%9D%E6%8E%A2/) <font color="#33CC00">完成</font>
 + 深入理解HTTP持久化连接 <font color="#33CC00">未完成</font>
-
-寒假终于结束，HTTP的第一遍也已经结束。后面的笔记我将阅读后的笔记目录先附上，随着第二遍阅读的进度完成每篇笔记。【笔记目录虽然很多和原书目录重复，但这更是个人重新总结之后的结果】。也会在每部分增加自己需要补充的内容。此次每篇读书笔记的目录并不是最终目录，也会随着补充不断完善。
-
 + [WEB服务器]({{urls.posts}}/notes/web-server/)<font color="#33CC00">完成</font>
 + [代理]({{urls.posts}}/notes/%E4%BB%A3%E7%90%86/)<font color="#33CC00">目录完成</font>
 + [缓存]({{urls.posts}}/notes/%E7%BC%93%E5%AD%98/)<font color="#33CC00">目录完成</font>
